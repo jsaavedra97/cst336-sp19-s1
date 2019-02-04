@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>JS Bin</title>
+    
+      <style>
+      
+        body{
+            background-color: black;
+            color: white;
+        }
+        
+        header, main{
+            text-align: center;
+        }
+        
+        .spring, .summer, .fall, .winter {
+          width: 300px;
+          height: 300px;
+        }
+        
+        .spring img, .summer img, .fall img, .winter img{
+            width: 100%;
+            height: auto;
+        }
+        
+        .spring img:hover, .summer img:hover, .fall img:hover, .winter img:hover{
+            transform: scale(1.5);
+        }
+        
+        .spring {
+            border-top-left-radius: 50px 
+        }
+        
+        #row1, #row2 {
+          display: flex;
+        }
+        
+        </style>
+    </head>
+    
+    <body>
+        <header>Seasons</header>
+        
+        <br /><br />
+
+        <main>
+            <div id="row1">
+                <figure class="spring">
+                    <img src="seasons/img/spring.png" alt="Spring" />
+                    <div id="season">Spring</div>
+                </figure>
+                
+                <figure class="summer">
+                    <img src="seasons/img/summer.png" alt="Summer" />
+                    <div id="season">Summer</div>
+                </figure>
+            </div>
+            
+            <div id="row2">
+                <figure class="fall">
+                    <img src="seasons/img/fall.png" alt="Fall" />
+                    <div id="season">Fall</div>
+                </figure>
+                
+                <figure class="winter">
+                    <img src="seasons/img/winter.jpg" alt="Winter" />
+                    <div id="season">Winter</div>
+                </figure>
+            </div>
+        </main>
+        
+    </body>
+</html>
