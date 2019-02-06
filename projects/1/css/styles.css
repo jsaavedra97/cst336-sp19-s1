@@ -1,0 +1,75 @@
+body{
+    background-color: #800000;
+    color: white;
+}
+
+header, main, nav, footer, #content{
+    text-align: center;
+}
+
+nav hr{
+    width: 50%;
+}
+
+nav a {
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none; /* removes underline */
+    color: white;          /* by default, links are blue*/
+}
+
+nav a:hover {
+    border-bottom: 2px white solid;
+    font-size: 2em;
+    transition: 1.9s;
+}
+
+#intro img{
+    max-width: 42%;
+    height: auto;
+    float: left;
+    padding: 30px;
+}
+
+#intro img:hover{
+    transition: .9s;
+    transform: scale(1.25);
+}
+
+#generalOverview{
+    text-align: left; 
+    float: right;
+}
+
+footer{
+    clear: both;
+}
+
+.row1, .row2{
+    display: flex;
+}
+
+.vrExample1 img, .vrExample2 img{
+    height: 500px;
+    width: auto;
+    object-fit: scale-down;
+}
+
+#vrOverview, #mrOverview{
+    text-align: center;
+}
+
+#arVideo{
+    width: 376px;
+    height: 668px;
+    padding-right: 50px;
+}
+
+.mrPic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-right: 90px;
+}
