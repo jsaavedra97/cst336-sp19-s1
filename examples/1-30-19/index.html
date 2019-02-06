@@ -2,20 +2,66 @@
 <html>
     <head>
         <title> </title>
+       <style>
+           html, body{
+               width: 100%;
+               height: 100%;
+           }
+           
+           header img{
+               width: 100px;
+               height: auto;
+           }
+           
+           search button img, article button img{
+               height: 10px;
+           }
+           
+           .help{
+               position: fixed;
+               bottom: 10px;
+               right: 10px;
+           }
+           
+           .container{
+               padding-right: 1000px;
+           }
+       </style>
     </head>
+    
     <body>
         
-        <main>
-            <header>header</header>
-            <div class="content">
-                <section>
-                    <div class="top">content <span style="color:red">left</span> top</div>
-                    <article class="bottom">content left boottom</article>
-                </section>
-                <aiside>content right</aside>
-            </div>
-            <footer>footer</footer>
-        </main>
+        <div class="container">
+            <main>
+                <header>
+                    <img src="https://i.imgur.com/2dxaFs9.jpg"></img>
+                </header>
+                
+                <content>
+                    <section>
+                        <search>
+                            <input type="text" name=""/>
+                            <button type="button" value="?">
+                                <img src="search-icon.png" />
+                            </button>   
+                        </search>
+                        
+                        <article class="bottom">
+                            <span>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut ornare ligula, ut placerat quam. Nullam ipsum tortor, bibendum et libero vel, porttitor euismod ligula. Maecenas vitae sapien mi. Cras finibus est quis auctor sodales. Etiam luctus imperdiet diam, ut hendrerit diam vestibulum fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis efficitur vulputate est at dictum. Nunc iaculis sagittis diam sit amet bibendum.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam felis dui, pharetra sit amet volutpat et, dictum quis arcu. Aenean et mi tincidunt, ultricies orci ut, semper dui. Suspendisse viverra elit eu odio volutpat, in pulvinar augue laoreet. Mauris suscipit, orci in blandit rhoncus, nisl urna porttitor ipsum, eget efficitur quam massa id tortor. Sed placerat massa sed dui egestas dapibus. Nulla eu neque non dolor fringilla cursus. Vivamus vestibulum lorem et libero volutpat ultrices ac et metus. Donec tempus lorem ipsum, at viverra enim consectetur sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque ut arcu molestie, eleifend augue et, ornare neque.Proin nec imperdiet eros, et semper velit. Nulla accumsan ante nulla, non tristique purus laoreet eu. Morbi nec augue in nunc faucibus semper. Donec vulputate porttitor nisi, ut facilisis eros facilisis interdum. Sed accumsan condimentum magna in dictum. Aenean placerat sem id sapien gravida, in pulvinar orci aliquet. Donec gravida in tellus in condimentum. Curabitur imperdiet eget erat non sollicitudin. Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aliquam erat volutpat. Sed congue rutrum ex, quis fringilla dolor fermentum non. Quisque bibendum risus diam, a aliquam risus feugiat sit amet. Nulla vestibulum euismod mi in imperdiet. Duis non mi sit amet nunc tristique bibendum sed nec ex. Donec consectetur porta dui, at commodo est vehicula eget. Phasellus volutpat efficitur felis, et lacinia ex ultrices et. Donec sed consequat metus, id tristique ante. Nullam sollicitudin congue mauris et feugiat. Fusce ultrices luctus tempus. Donec feugiat ac purus id vehicula. Proin gravida pulvinar felis. Donec quis vulputate mauris. Nullam dolor metus, elementum at euismod at, commodo quis odio. Aenean neque nibh, lobortis ut commodo eu, interdum in erat. Ut aliquam blandit lectus, sed luctus magna efficitur ut.Morbi in pellentesque felis. Aenean egestas sed ipsum ut gravida. Pellentesque libero est, euismod vel finibus non, viverra eu augue. Curabitur varius odio justo, sit amet tempus arcu vulputate in. Duis at finibus orci. Suspendisse potenti. Proin ac fringilla ligula. Duis vehicula, justo tincidunt malesuada ultrices, elit arcu tempus nunc, sit amet porta metus nibh at mi. Suspendisse nec malesuada ex. Pellentesque pulvinar aliquam mi vitae interdum.m
+                            </span>
+                            
+                            <button type="button" class="help">
+                                <img src="help-icon.png" />
+                            </button>
+                        </article>
+                    </section>
+                    <aiside>content right</aside>
+                </content>
+                
+                <footer>@copyright 2019</footer>
+            </main>
+        </div>
     
     </body>
 </html>
