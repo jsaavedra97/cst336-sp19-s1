@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+    jQuery Examples
+-->
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+        <main>
+            <h2 id="weekday"> Weekdays: </h2>
+	        <h3 class="smallFont"> Monday </h3>
+            <h3> Tuesday </h3>
+            <h2> Weekend: </h2>
+            <h3> Saturday </h3>
+            <h3> Sunday </h3>
+            
+            <div id="box" style="width:100px; height:100px; background:red; position:absolute;"></div>
+        </main>
+
+        <!-- jQuery Stuff -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $("document").ready(function(){
+                // javascript goes here
+                console.log("Runnning on Ready");
+                // $("h2").css("color","red");
+                $("#weekday").css("color","red");
+                $(".smallFont").css("color","red");
+                
+                var currentLeft;
+                $('#box').click ( function() { 
+                    currentLeft = $('box').css('left');
+                    $('#box').animate({ left:'250px' });
+                    setTimeOut(function(){
+                        $('#box').animate({ left:'$(currentLeft)' });
+                    }, 2000);
+                });
+
+            });
+        </script>
+        
+
+    </body>
+</html>
