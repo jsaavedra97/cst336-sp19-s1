@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slots</title>
+        <meta charset="utf-8" />
+    </head>
+    
+    <body>
+        
+        <main>
+            <h1> Slot Machine </h1>
+            <div id="image1">
+                <!--<img src="img/cherry.png"></img>-->
+            </div>
+            <div id="image2">
+                <!--<img src="img/cherry.png"></img>-->
+            </div>
+            <div id="image3">
+                <!--<img src="img/cherry.png"></img>-->
+            </div>
+        </main>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--<script src="js/functions.js"></script>-->
+        <script>
+            $("document").ready(function(){
+                // javascript goes here
+                // console.log("Runnning on Ready");
+                
+                let imageArray = ["cherry", "grapes", "seven"];
+                let randomIndex = Math.floor(Math.random() * 3);
+                let randomImage = imageArray[randomIndex];
+                
+                $("#image1").html("<img src='img/" + imageArray[Math.floor(Math.random() * 3)] + ".png' />");
+                $("#image2").html("<img src='img/" + imageArray[Math.floor(Math.random() * 3)] + ".png' />");
+                $("#image3").html("<img src='img/" + imageArray[Math.floor(Math.random() * 3)] + ".png' />");
+
+                
+            });
+        </script>
+    </body>
+</html>
