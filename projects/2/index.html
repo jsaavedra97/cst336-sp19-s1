@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Tell Me About Yourself!</title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <header>Tell Me About You!</header>
+        <main>
+            <form method="post" id="info">
+                <div><label>First Name:</label><input type="text" id="firstname" name="firstname" minlength="2" required/></div>
+                <div><label>Last Name:</label><input type="text" id="lastname" name="lastname" minlength="2" required/></div>
+                
+                <div>
+                    <div><input class="chosengender" type="radio" name="gender" value="male">
+                    <label for="male">Male</label></div>
+                    
+                    <div><input class="chosengender" type="radio" name="gender" value="female">
+                    <label for="female">Female</label></div>      
+                    
+                    <div><input class="chosengender" type="radio" name="gender" value="other">
+                    <label for="other">Other</label></div>      
+                </div>
+                
+                <div>
+                    <div>How do you like to spend your free time?</div>
+                    <div><input class="chosenhobby" type="checkbox" name="option" value="programing">
+                    <label for="programing">Programing</label></div>
+                    
+                    <div><input class="chosenhobby" type="checkbox" name="option" value="outside">
+                    <label for="outside">Going outside</label></div>
+                    
+                    <div><input class="chosenhobby" type="checkbox" name="option" value="family">
+                    <label for="family">Spend time with family</label></div>
+                    
+                    <div><input class="chosenhobby" type="checkbox" name="option" value="sleeping">
+                    <label for="sleeping">Sleep</label></div>
+                    
+                    <div><input class="chosenhobby" type="checkbox" name="option" value="netflix">
+                    <label for="netflix">Watch Nextflix and chill</label></div>
+                    
+                    <div><input class="chosenhobby" type="checkbox" name="option" value="other">
+                    <label for="other">Other</label></div>
+                </div>
+                
+                <div>
+                    <div>What's your favorite animal?</div>
+                    <select name="animal" class="choseanimal">
+                        <option value="dogs">Dogs</option>
+                        <option value="cats">Cats</option>
+                        <option value="elephants">Elephants</option>
+                        <option value="giraffes">Giraffes</option>
+                        <option value="kangaroos">Kangaroos</option>
+                        <option value="sharks">Sharks</option>
+                        <option value="lions">Lions</option>
+                        <option value="tigers">Tigers</option>
+                        <option value="bears">Bears</option>
+                        <option value="rabbits">Rabbits</option>
+                        <option value="birds">Birds</option>
+                        <option value="chickens">Chickens</option>
+                        <option value="ducks">Ducks</option>
+                        <option value="horses">Horses</option>
+                        <option value="zebras">Zebras</option>
+                        <option value="wolves">Wolves</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <div>Anything else you'd like to tell me?</div>
+                    <textarea class="misc" name="message" rows="10" cols="30"></textarea>
+                </div>
+                <!--Submit button-->
+                <div><input type="button" id="submitbutton" value="Submit"/></div>
+            </form>
+            
+            <div class="process">
+                <p id="result">New Data Goes here</p>
+            </div>
+        </main>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+        <script src="js/functions.js"></script>
+    </body>
+
+</html>
